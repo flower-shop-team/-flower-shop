@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account</title>
+     <link rel="stylesheet"  href="assetes/css/bootstrap.min.css" >
+    <link rel="stylesheet"  href="style.css" >
+    <link rel="stylesheet" href="faq-style.css">
+    <!-- nav bar -->
+      <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assests/css/style.css">
+
+
+</head>
+<body>
+
+<!-- nav bar -->
+  <div class="header">
+
+    <div class="header-content">
+
+        <!-- Logo -->
+        <img src="assests/logos/logo.png" alt="logo image">
+
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li class="nav-item dropdown">
+
+                    <a href="category.html" class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Category
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="category.html">Flowers</a></li>
+                        <li><a class="dropdown-item" href="category.html">Cactus</a></li>
+                        <li><a class="dropdown-item" href="category.html">🪴 Aloe Vera</a></li>
+                        <li><a class="dropdown-item" href="category.html">Bonsai</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li><a href="faq.html">FAQ</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+        <!-- Hamburger -->
+        <div class="humberger-menu">
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive"
+                    aria-controls="offcanvasResponsive">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="offcanvas-lg offcanvas-end"
+                 tabindex="-1"
+                 id="offcanvasResponsive">
+
+                <div class="offcanvas-body">
+
+                    <ul>
+
+                        <li><a href="shop.html">Shop</a></li>
+
+                        <li class="category">
+
+                            <a href="#categoryMenu"
+                               data-bs-toggle="collapse"
+                               aria-expanded="false"
+                               aria-controls="categoryMenu">
+
+                                <span>Category</span>
+
+                            </a>
+
+                            <ul class="collapse submenu" id="categoryMenu">
+
+                                <li><a href="category.html">Flowers</a></li>
+                                <li><a href="category.html">Cactus</a></li>
+                                <li><a href="category.html">🪴 Aloe Vera</a></li>
+                                <li><a href="category.html">Pothes</a></li>
+                    
+                            </ul>
+
+                        </li>
+
+                        <li><a href="faq.html">FAQ</a></li>
+
+                        <li><a href="blog.html">Blog</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Header Icons -->
+        <div class="head-icons">
+
+
+<!-- Search -->
+    <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search in blog...">
+                <button id="closeSearch">×</button>
+            </div>
+        </div>
+
+
+            <!-- Cart -->
+            <a href="shopping-cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+
+            <!-- Wishlist -->
+            <a href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+
+            <!-- Account -->
+            <a href="account.html">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<div style="background-color: #27ae60; margin-bottom: 40px;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; align-items: center; gap: 10px;">
+      <a href="home.html" style="color: #030303; text-decoration: none;"><i class="fa-solid fa-house"></i></a>
+      <span style="color: #030303;"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i></span>
+      <span style="color: #030303; font-weight: 500;"> account</span>
+    </div>
+  </div>
+
+<div class="account" > 
+<form name="loginForm" class="needs-validation" novalidate>
+
+    <h3>Login<hr></h3>
+
+    <h6>Username or email address *</h6>
+
+    <input class="form-control input" type="text" name="email"  placeholder="enter your Username or email address" required  >
+
+    <div class="invalid-feedback">
+        Please enter your username or email.
+    </div>
+
+
+    <h6>Password *</h6>
+
+    <input class="form-control input" type="password" name="pass" placeholder="enter your password"required >
+
+    <div class="invalid-feedback">
+        Please enter your password.
+    </div>
+
+
+    <button class="login btn btn-primary" type="submit">
+        Login
+    </button>
+
+    <label>
+        <input type="checkbox">
+        Remember me
+    </label>
+
+    <p>Lost your password?</p>
+
+</form>
+<form name="registerForm" class="needs-validation" novalidate>
+
+    <h3>Register<hr></h3>
+    <h6>Email address *</h6>
+    <input class="form-control input" type="email" name="email" placeholder="enter your email address"required>
+    <div class="invalid-feedback">
+        Please enter a valid email address.
+    </div>
+    <h6>
+        A link to set a new password will be sent to your email address.
+    </h6>
+    <button class="Register btn btn-primary" type="submit">
+        Register
+    </button>
+
+</form>
+</div>  
+
+<div id="successMessage" class="success-overlay">
+    <div class="success-box">
+        <i class="fa-solid fa-circle-check"></i>
+        <h2>Successful!</h2>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="logo2.png" alt="Flower Shop Logo">
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">x</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">▶</a>
+      </div>
+    </div>
+
+    <!-- Right Side Columns -->
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h3>CONTACT</h3>
+        <p>info@xtraflower.com</p>
+        <p>+1 (800) 345 – 678</p>
+      </div>
+      <div class="footer-col">
+        <h3>ADDRESS</h3>
+        <p>1079 Terry Lane,<br>Winter Park, Florida</p>
+      </div>
+      <div class="footer-col">
+        <h3>WORKING HOURS</h3>
+        <p>Mon-Fri 9 ~ 18</p>
+        <p>Sat-Sun 10~ 20</p>
+      </div>
+    </div>
+  </footer>
+
+<script src="assetes/js/bootstrap.min.js">
+</script>
+<script src="java.js"></script>
+<!-- search -->
+ <script src="assests/js/js.js"></script>
+<script src="assests/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="shopping-cart.css" >
+    <link rel="stylesheet" href="cart-nav.css" >
+    <link rel="stylesheet" href="checkout.css" >
+    <link rel="stylesheet" href="faq-style.css">
+
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assests/css/style.css">
+
+  </head>
+
+  <div class="header">
+
+    <div class="header-content">
+
+        <!-- Logo -->
+        <img src="assests/logos/logo.png" alt="logo image">
+
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li class="nav-item dropdown">
+
+                    <a href="category.html" class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Category
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark">
+
+                        <li><a class="dropdown-item" href="category.html">Flowers</a></li>
+                        <li><a class="dropdown-item" href="category.html">Cactus</a></li>
+                        <li><a class="dropdown-item" href="category.html">🪴 Aloe Vera</a></li>
+                        <li><a class="dropdown-item" href="category.html">Bonsai</a></li>
+                        
+                        
+
+                    </ul>
+
+                </li>
+
+                <li><a href="faq.html">FAQ</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+        <!-- Hamburger -->
+        <div class="humberger-menu">
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive"
+                    aria-controls="offcanvasResponsive">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="offcanvas-lg offcanvas-end"
+                 tabindex="-1"
+                 id="offcanvasResponsive">
+
+                <div class="offcanvas-body">
+
+                    <ul>
+
+                        <li><a href="shop.html">Shop</a></li>
+
+                        <li class="category">
+
+                            <a href="#categoryMenu"
+                               data-bs-toggle="collapse"
+                               aria-expanded="false"
+                               aria-controls="categoryMenu">
+
+                                <span>Category</span>
+
+                            </a>
+
+                            <ul class="collapse submenu" id="categoryMenu">
+
+                                <li><a href="category.html">Flowers</a></li>
+                                <li><a href="category.html">Cactus</a></li>
+                                <li><a href="category.html">🪴 Aloe Vera</a></li>
+                                <li><a href="category.html">Pothes</a></li>
+                                
+
+                            </ul>
+
+                        </li>
+
+                        <li><a href="faq.html">FAQ</a></li>
+
+                        <li><a href="blog.html">Blog</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Header Icons -->
+        <div class="head-icons">
+
+            <!-- Search -->
+             <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search in blog...">
+                <button id="closeSearch">×</button>
+            </div>
+        </div>
+
+
+            <!-- Cart -->
+            <a href="shopping-cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+
+            <!-- Wishlist -->
+            <a href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+
+            <!-- Account -->
+            <a href="">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+  <body>
+    <div class="shopping-cart">
+      <div class="shopping-cart-container">
+        <div class="cart-process text-nowrap fluid-text">
+          <a href="#" class="shopping-process">
+            <span>1</span>
+            <strong>Shopping Cart</strong>
+          </a>
+          <i class="ri-arrow-right-line"></i>
+          <a href="#" class="checkout-process">
+            <span>2</span>
+            <strong>Checkout Details</strong>
+          </a>
+          <i class="ri-arrow-right-line"></i>
+          <a href="#" class="order-process">
+            <span>3</span>
+            <strong>Order Complete</strong>
+          </a>
+        </div>
+
+        <div class="checkout-container">
+          <div class="billing-details">
+            <h2>Billing Details</h2>
+            <form id="checkout-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name"> First Name <span>*</span> </label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="firstName"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="last-name"> Last Name <span>*</span> </label>
+                  <input type="text" id="last-name" name="lastName" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email"> Email Address <span>*</span> </label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </form>
+          </div>
+
+          <div class="your-order">
+            <h2>Your Order</h2>
+            <div class="order-table-wrapper">
+              <table class="checkout-order-table">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Subtotal</th>
+                  </tr>
+                </thead>
+
+                <tbody id="checkout-items"></tbody>
+
+                <tfoot>
+                  <tr>
+                    <th>Subtotal</th>
+                    <td id="checkout-subtotal">$0.00</td>
+                  </tr>
+
+                  <tr>
+                    <th>Total</th>
+                    <td>
+                      <strong id="checkout-total"> $0.00 </strong>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <button type="submit" form="checkout-form" class="place-order">
+              Place Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order complete modal -->
+    <div class="order-modal-overlay" id="order-modal-overlay">
+      <div class="order-modal">
+        <button
+          class="order-modal-close"
+          id="order-modal-close"
+          aria-label="Close"
+        >
+          <i class="ri-close-line"></i>
+        </button>
+        <h2>Order Complete</h2>
+        <p>Thank you! Your order has been placed successfully.</p>
+      </div>
+    </div>
+
+    <footer>
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="logo2.png" alt="Flower Shop Logo">
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">x</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">▶</a>
+      </div>
+    </div>
+
+    <!-- Right Side Columns -->
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h3>CONTACT</h3>
+        <p>info@xtraflower.com</p>
+        <p>+1 (800) 345 – 678</p>
+      </div>
+      <div class="footer-col">
+        <h3>ADDRESS</h3>
+        <p>1079 Terry Lane,<br>Winter Park, Florida</p>
+      </div>
+      <div class="footer-col">
+        <h3>WORKING HOURS</h3>
+        <p>Mon-Fri 9 ~ 18</p>
+        <p>Sat-Sun 10~ 20</p>
+      </div>
+    </div>
+  </footer>
+
+    <script src="cart-box.js"></script>
+
+         <script src="assests/js/js.js"></script>
+     <script src="java.js"></script>   
+    <script src="assests/js/bootstrap.min.js"></script>
+  </body>
+</html>

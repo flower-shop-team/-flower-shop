@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - XTRA Flower Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="faq-style.css">
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="cart-nav.css">
+
+</head>
+
+<body>
+
+  <div class="header">
+
+    <div class="header-content">
+
+        <!-- Logo -->
+        <img src="assests/logos/logo.png" alt="logo image">
+
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li class="nav-item dropdown">
+
+                    <a href="category.html" class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Category
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark">
+
+                        <li><a class="dropdown-item" href="category.html">Flowers</a></li>
+                        <li><a class="dropdown-item" href="category.html">Cactus</a></li>
+                        <li><a class="dropdown-item" href="category.html">🪴 Aloe Vera</a></li>
+                        <li><a class="dropdown-item" href="category.html">Bonsai</a></li>
+                        
+                        
+
+                    </ul>
+
+                </li>
+
+                <li><a href="faq.html">FAQ</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+        <!-- Hamburger -->
+        <div class="humberger-menu">
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive"
+                    aria-controls="offcanvasResponsive">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="offcanvas-lg offcanvas-end"
+                 tabindex="-1"
+                 id="offcanvasResponsive">
+
+                <div class="offcanvas-body">
+
+                    <ul>
+
+                        <li><a href="shop.html">Shop</a></li>
+
+                        <li class="category">
+
+                            <a href="#categoryMenu"
+                               data-bs-toggle="collapse"
+                               aria-expanded="false"
+                               aria-controls="categoryMenu">
+
+                                <span>Category</span>
+
+                            </a>
+
+                            <ul class="collapse submenu" id="categoryMenu">
+
+                                <li><a href="category.html">Flowers</a></li>
+                                <li><a href="category.html">Cactus</a></li>
+                                <li><a href="category.html">🪴 Aloe Vera</a></li>
+                                <li><a href="category.html">Pothes</a></li>
+                                
+
+                            </ul>
+
+                        </li>
+
+                        <li><a href="faq.html">FAQ</a></li>
+
+                        <li><a href="blog.html">Blog</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Header Icons -->
+        <div class="head-icons">
+
+            <!-- Search -->
+             <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search in blog...">
+                <button id="closeSearch">×</button>
+            </div>
+        </div>
+
+
+            <!-- Cart -->
+            <a href="shopping-cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+
+            <!-- Wishlist -->
+            <a href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+
+            <!-- Account -->
+            <a href="account.html">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <div class="cart-box-nav">
+          <h2 class="cart-title">Your Cart</h2>
+          <div class="cart-content">
+            <!-- <div class="cart-box">
+          <img src="assets/images/p11-1.jpg" alt="" class="cart-img" />
+          <div class="cart-details">
+            <h2 class="cart-product-title">Areca Palm</h2>
+            <span class="cart-price">$299</span>
+            <div class="cart-quantity">
+              <button id="decrement">-</button>
+              <span class="number">1</span>
+              <button id="increment">+</button>
+            </div>
+          </div>
+          <i class="ri-delete-bin-line cart-remove"></i>
+        </div> -->
+          </div>
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <button class="btn-buy"><a href="shopping-cart.html"> Buy Now</a></button>
+          <i class="ri-close-fill" id="cart-close"></i>
+        </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div style="background-color: #27ae60; margin-bottom: 40px;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; align-items: center; gap: 10px;">
+      <a href="home.html" style="color: #030303; text-decoration: none;"><i class="fa-solid fa-house"></i></a>
+      <span style="color: #030303;"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i></span>
+      <span style="color: #030303; font-weight: 500;"> catagory </span>
+    </div>
+  </div>
+
+<a href="category.html" class="btn btn-primary m-3">Back to Categories</a>
+<div class="shop-container">
+
+    <!-- Header / Info Bar -->
+    <div class="shop-header-info">
+        <p class="results-text">Showing all <span id="productsCount">12</span> results</p>
+        <div class="shop-controls">
+            <select id="sortSelect" class="form-select">
+                <option value="default">Default</option>
+                <option value="rating">Top Rated</option>
+                <option value="high">Highest Price</option>
+                <option value="low">Lowest Price</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Main Layout: Content + Sidebar -->
+    <div class="shop-main-layout">
+
+        <!-- Left / Main Content Area -->
+        <div class="shop-content-area">
+
+            <!-- Category Cards -->
+            <div class="categories-grid">
+                <div class="category-box active" data-category="all">
+                    <div class="cat-icon">📦</div>
+                    <div class="cat-info">
+                        <h4>All Products</h4>
+                        <span>12 Items</span>
+                    </div>
+                </div>
+                <div class="category-box" data-category="Flower">
+                    <div class="cat-icon">📁</div>
+                    <div class="cat-info">
+                        <h4>Flower</h4>
+                        <span>5 Items</span>
+                    </div>
+                </div>
+                <div class="category-box" data-category="Cactus">
+                    <div class="cat-icon">📁</div>
+                    <div class="cat-info">
+                        <h4>Cactus</h4>
+                        <span>4 Items</span>
+                    </div>
+                </div>
+                <div class="category-box" data-category="Aloe Vera">
+                    <div class="cat-icon">📁</div>
+                    <div class="cat-info">
+                        <h4>Aloe Vera</h4>
+                        <span>3 Items</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid (12 Products) -->
+            <div id="productsContainer" class="row g-4">
+
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-4 product-item" data-id="1" data-category="Flower" data-price="25" data-rating="4.8">
+                    <div class="card product-card h-100">
+                        <img src="images/1.jpeg" class="card-img-top product-image" alt="Angel's Wing">
+                        <div class="card-body">
+                            <h5 class="card-title">Angel's Wing</h5>
+                            <p class="product-rating">★ 4.8</p>
+                            <p class="product-price">$25</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+                                <button class="add-to-wishlist" onclick="addToWishlist(1)">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-4 product-item" data-id="2" data-category="Cactus,Pothos" data-price="259" data-rating="4.5">
+                    <div class="card product-card h-100">
+                        <div class="badge-sale">Sale!</div>
+                        <img src="images/2.jpeg" class="card-img-top product-image" alt="Areca Palm">
+                        <div class="card-body">
+                            <h5 class="card-title">Areca Palm</h5>
+                            <p class="product-rating">★ 4.5</p>
+                            <p class="product-price"><del>$299</del> $259</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart" onclick="addToCart(2)">Add to Cart</button>
+                                <button class="add-to-wishlist" onclick="addToWishlist(2)">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-4 product-item" data-id="3" data-category="Flower" data-price="14" data-rating="4.5">
+                    <div class="card product-card h-100">
+                        <img src="images/3.jpeg" class="card-img-top product-image" alt="Arrowroot">
+                        <div class="card-body">
+                            <h5 class="card-title">Arrowroot</h5>
+                            <p class="product-rating">★ 4.5</p>
+                            <p class="product-price">$14</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart" onclick="addToCart(3)">Add to Cart</button>
+                                <button class="add-to-wishlist" onclick="addToWishlist(3)">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-md-6 col-lg-4 product-item" data-id="4" data-category="Cactus" data-price="199" data-rating="4.8">
+                    <div class="card product-card h-100">
+                        <img src="images/4.jpeg" class="card-img-top product-image" alt="Bird of Paradise">
+                        <div class="card-body">
+                            <h5 class="card-title">Bird of Paradise</h5>
+                            <p class="product-rating">★ 4.8</p>
+                            <p class="product-price">$199</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart" onclick="addToCart(4)">Add to Cart</button>
+                                <button class="add-to-wishlist" onclick="addToWishlist(4)">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-md-6 col-lg-4 product-item" data-id="5" data-category="Aloe Vera,Flower" data-price="95" data-rating="4.5">
+                    <div class="card product-card h-100">
+                        <img src="images/5.jpeg" class="card-img-top product-image" alt="Candelabra Aloe">
+                        <div class="card-body">
+                            <h5 class="card-title">Candelabra Aloe</h5>
+                            <p class="product-rating">★ 4.5</p>
+                            <p class="product-price">$95</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart" onclick="addToCart(5)">Add to Cart</button>
+                                <button class="add-to-wishlist" onclick="addToWishlist(5)">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-md-6 col-lg-4 product-item" data-id="6" data-category="Flower" data-price="129" data-rating="4.8">
+                    <div class="card product-card h-100">
+                        <div class="badge-sale">Sale!</div>
+                        <img src="images/6.jpeg" class="card-img-top product-image" alt="Fiddle Leaf Fig">
+                        <div class="card-body">
+                            <h5 class="card-title">Fiddle Leaf Fig</h5>
+                            <p class="product-rating">★ 4.8</p>
+                            <p class="product-price"><del>$149</del> $129</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart" onclick="addToCart(6)">Add to Cart</button>
+                                <button class="add-to-wishlist" onclick="addToWishlist(6)">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="col-md-6 col-lg-4 product-item" data-id="7" data-category="Aloe Vera" data-price="19" data-rating="4.8">
+                    <div class="card product-card h-100">
+                        <img src="images/7.jpeg" class="card-img-top product-image" alt="Fiddle Leaf Fig">
+                        <div class="card-body">
+                            <h5 class="card-title">Fiddle Leaf Fig</h5>
+                            <p class="product-rating">★ 4.8</p>
+                            <p class="product-price">$19</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart" onclick="addToCart(7)">Add to Cart</button>
+                                <button class="add-to-wishlist" onclick="addToWishlist(7)">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-md-6 col-lg-4 product-item" data-id="8" data-category="Pothos" data-price="59" data-rating="4.8">
+                    <div class="card product-card h-100">
+                        <div class="badge-sale">Sale!</div>
+                        <img src="images/8.jpeg" class="card-img-top product-image" alt="Golden Pothos">
+                        <div class="card-body">
+                            <h5 class="card-title">Golden Pothos</h5>
+                            <p class="product-rating">★ 4.8</p>
+                            <p class="product-price"><del>$69</del> $59</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart" onclick="addToCart(8)">Add to Cart</button>
+                                <button class="add-to-wishlist" onclick="addToWishlist(8)">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="col-md-6 col-lg-4 product-item" data-id="9" data-category="Aloe Vera" data-price="49" data-rating="4.5">
+                    <div class="card product-card h-100">
+                        <div class="badge-sale">Sale!</div>
+                        <img src="images/9.jpeg" class="card-img-top product-image" alt="Homalomena">
+                        <div class="card-body">
+                            <h5 class="card-title">Homalomena</h5>
+                            <p class="product-rating">★ 4.5</p>
+                            <p class="product-price"><del>$59</del> $49</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart" onclick="addToCart(9)">Add to Cart</button>
+                                <button class="add-to-wishlist" onclick="addToWishlist(9)">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="col-md-6 col-lg-4 product-item" data-id="10" data-category="Flower" data-price="79" data-rating="4.8">
+                    <div class="card product-card h-100">
+                        <img src="images/10.jpeg" class="card-img-top product-image" alt="Japanese Holly">
+                        <div class="card-body">
+                            <h5 class="card-title">Japanese Holly</h5>
+                            <p class="product-rating">★ 4.8</p>
+                            <p class="product-price">$79</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart" onclick="addToCart(10)">Add to Cart</button>
+                                <button class="add-to-wishlist" onclick="addToWishlist(10)">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="col-md-6 col-lg-4 product-item" data-id="11" data-category="Aloe Vera" data-price="25" data-rating="4.5">
+                    <div class="card product-card h-100">
+                        <img src="images/11.jpeg" class="card-img-top product-image" alt="Nerve Plant">
+                        <div class="card-body">
+                            <h5 class="card-title">Nerve Plant</h5>
+                            <p class="product-rating">★ 4.5</p>
+                            <p class="product-price">$25</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart" onclick="addToCart(11)">Add to Cart</button>
+                                <button class="add-to-wishlist" onclick="addToWishlist(11)">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="col-md-6 col-lg-4 product-item" data-id="12" data-category="Cactus,Flower" data-price="249" data-rating="4.8">
+                    <div class="card product-card h-100">
+                        <img src="images/12.jpeg" class="card-img-top product-image" alt="Snake Plant">
+                        <div class="card-body">
+                            <h5 class="card-title">Snake Plant</h5>
+                            <p class="product-rating">★ 4.8</p>
+                            <p class="product-price">$249</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart" onclick="addToCart(12)">Add to Cart</button>
+                                <button class="add-to-wishlist" onclick="addToWishlist(12)">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="pagination" class="pagination"></div>
+        </div>
+
+        <!-- Right / Sidebar Area -->
+        <div class="shop-sidebar">
+            <div class="sidebar-widget">
+                <div class="widget-title">Filter by price</div>
+                <div class="price-filter-body">
+                    <div class="range-inputs">
+                        <input type="range" id="minPrice" min="0" max="300" value="0">
+                        <input type="range" id="maxPrice" min="0" max="300" value="300">
+                    </div>
+                    <div class="price-values">
+                        Price: $<span id="minVal">0</span> – $<span id="maxVal">300</span>
+                    </div>
+                    <button id="filterBtn" class="btn-filter-action">Filter</button>
+                </div>
+            </div>
+
+            <!-- Other Products Widget -->
+            <div class="sidebar-widget">
+                <div class="widget-title">Other Products</div>
+                <div class="sidebar-product-item">
+                    <img src="images/3.jpeg" alt="Arrowroot">
+                    <div>
+                        <h6>Arrowroot</h6>
+                        <div class="rating-small">★ 4.5</div>
+                        <span class="price-small">$14</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="logo2.png" alt="Flower Shop Logo">
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">x</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">▶</a>
+      </div>
+    </div>
+
+    <!-- Right Side Columns -->
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h3>CONTACT</h3>
+        <p>info@xtraflower.com</p>
+        <p>+1 (800) 345 – 678</p>
+      </div>
+      <div class="footer-col">
+        <h3>ADDRESS</h3>
+        <p>1079 Terry Lane,<br>Winter Park, Florida</p>
+      </div>
+      <div class="footer-col">
+        <h3>WORKING HOURS</h3>
+        <p>Mon-Fri 9 ~ 18</p>
+        <p>Sat-Sun 10~ 20</p>
+      </div>
+    </div>
+  </footer>
+
+<script src="shop.js"></script>
+<script src="cart-box.js"></script>
+<script src="assests/js/js.js"></script>
+</body>
+</html>

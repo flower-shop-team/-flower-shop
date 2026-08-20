@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Flower Shop</title>
+  <!-- FontAwesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="faq-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- nav-bar -->
+  <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+
+<body>
+
+  <div class="header">
+
+    <div class="header-content">
+
+        <!-- Logo -->
+        <img src="assests/logos/logo.png" alt="logo image">
+
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li class="nav-item dropdown">
+
+                    <a href="category.html" class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Category
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark">
+
+                        <li><a class="dropdown-item" href="category.html">Flowers</a></li>
+                        <li><a class="dropdown-item" href="category.html">Cactus</a></li>
+                        <li><a class="dropdown-item" href="category.html">🪴 Aloe Vera</a></li>
+                        <li><a class="dropdown-item" href="category.html">Bonsai</a></li>
+                        
+                        
+
+                    </ul>
+
+                </li>
+
+                <li><a href="faq.html">FAQ</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+        <!-- Hamburger -->
+        <div class="humberger-menu">
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive"
+                    aria-controls="offcanvasResponsive">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="offcanvas-lg offcanvas-end"
+                 tabindex="-1"
+                 id="offcanvasResponsive">
+
+                <div class="offcanvas-body">
+
+                    <ul>
+
+                        <li><a href="shop.html">Shop</a></li>
+
+                        <li class="category">
+
+                            <a href="#categoryMenu"
+                               data-bs-toggle="collapse"
+                               aria-expanded="false"
+                               aria-controls="categoryMenu">
+
+                                <span>Category</span>
+
+                            </a>
+
+                            <ul class="collapse submenu" id="categoryMenu">
+
+                                <li><a href="category.html">Flowers</a></li>
+                                <li><a href="category.html">Cactus</a></li>
+                                <li><a href="category.html">🪴 Aloe Vera</a></li>
+                                <li><a href="category.html">Pothes</a></li>
+                                
+
+                            </ul>
+
+                        </li>
+
+                        <li><a href="faq.html">FAQ</a></li>
+
+                        <li><a href="blog.html">Blog</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Header Icons -->
+        <div class="head-icons">
+
+            <!-- Search -->
+             <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search in blog...">
+                <button id="closeSearch">×</button>
+            </div>
+        </div>
+
+
+            <!-- Cart -->
+            <a href="shopping-cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+
+            <!-- Wishlist -->
+            <a href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+
+            <!-- Account -->
+            <a href="account.html">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+  <!-- Breadcrumb -->
+  <!-- Breadcrumb Section -->
+  <div style="background-color: #27ae60; margin-bottom: 40px;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; align-items: center; gap: 10px;">
+      <a href="home.html" style="color: #030303; text-decoration: none;"><i class="fa-solid fa-house"></i></a>
+      <span style="color: #030303;"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i></span>
+      <span style="color: #030303; font-weight: 500;"> FAQ </span>
+    </div>
+  </div>
+  <!-- Main Content Section -->
+  <div class="main-content">
+    <div class="faq-subtitle">F . A . Q</div>
+    <h1>Do You Have any Question?</h1>
+    <p>Please read questions bellow and if you can not find your answer, please send us your question, we will answer
+      you as soon as possible.</p>
+  </div>
+  <!-- Left Column: F.A.Qs -->
+  <div class="faq-page-wrapper">
+    <div class="faq-column">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-question"></i></div>
+        <div class="section-title">F.A.Qs</div>
+      </div>
+      <!-- Question 1 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Your Question Title?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Do eiusmod tempor incidit?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.</p>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Cupidatat iusmod tempor incid idun?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.</p>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Excepteur sint occaecat cupidatat iusmod?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.</p>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Consectetur adipisicing elit, sed do?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.</p>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Cupidatat iusmod tempor incid idun?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Ask Us Form -->
+    <div class="form-column">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-regular fa-comment-dots"></i></div>
+        <div class="section-title">Ask Us</div>
+      </div>
+
+      <form id="askForm">
+        <div class="form-group">
+          <label>Your Name (*)</label>
+          <input type="text" id="nameField">
+        </div>
+        <div class="form-group">
+          <label>Your Email (*)</label>
+          <input type="email" id="emailField">
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <label>Department</label>
+          <select>
+            <option>Business Department</option>
+            <option>Personal Department</option>
+            <option>Support Department</option>
+            <option>Others</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Your Question</label>
+          <textarea id="questionField"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Ask</button>
+      </form>
+
+      <div id="errorMessage" class="form-error-message">
+        One or more fields have an error. Please check and try again.
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="logo2.png" alt="Flower Shop Logo">
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">x</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">▶</a>
+      </div>
+    </div>
+
+    <!-- Right Side Columns -->
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h3>CONTACT</h3>
+        <p>info@xtraflower.com</p>
+        <p>+1 (800) 345 – 678</p>
+      </div>
+      <div class="footer-col">
+        <h3>ADDRESS</h3>
+        <p>1079 Terry Lane,<br>Winter Park, Florida</p>
+      </div>
+      <div class="footer-col">
+        <h3>WORKING HOURS</h3>
+        <p>Mon-Fri 9 ~ 18</p>
+        <p>Sat-Sun 10~ 20</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="pulgin.js"></script>
+  <!-- search -->
+  <script src="assests/js/js.js"></script>
+
+</body>
+
+</html>

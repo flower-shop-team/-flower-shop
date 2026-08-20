@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet"  href="assetes/css/bootstrap.min.css" >
+    <link rel="stylesheet"  href="style.css" >
+    <link rel="stylesheet" href="faq-style.css">
+        <!-- nav bar -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+<body>
+<!-- nav bar -->
+  <div class="header">
+
+    <div class="header-content">
+
+        <!-- Logo -->
+        <img src="assests/logos/logo.png" alt="logo image">
+
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li class="nav-item dropdown">
+
+                    <a href="category.html" class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Category
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="category.html">Flowers</a></li>
+                        <li><a class="dropdown-item" href="category.html">Cactus</a></li>
+                        <li><a class="dropdown-item" href="category.html">🪴 Aloe Vera</a></li>
+                        <li><a class="dropdown-item" href="category.html">Bonsai</a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="faq.html">FAQ</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+        <!-- Hamburger -->
+        <div class="humberger-menu">
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive"
+                    aria-controls="offcanvasResponsive">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="offcanvas-lg offcanvas-end"
+                 tabindex="-1"
+                 id="offcanvasResponsive">
+
+                <div class="offcanvas-body">
+
+                    <ul>
+
+                        <li><a href="shop.html">Shop</a></li>
+
+                        <li class="category">
+
+                            <a href="#categoryMenu"
+                               data-bs-toggle="collapse"
+                               aria-expanded="false"
+                               aria-controls="categoryMenu">
+
+                                <span>Category</span>
+
+                            </a>
+
+                            <ul class="collapse submenu" id="categoryMenu">
+
+                                <li><a href="category.html">Flowers</a></li>
+                                <li><a href="category.html">Cactus</a></li>
+                                <li><a href="category.html">🪴 Aloe Vera</a></li>
+                                <li><a href="category.html">Pothes</a></li>
+                               
+
+                            </ul>
+
+                        </li>
+
+                        <li><a href="faq.html">FAQ</a></li>
+
+                        <li><a href="blog.html">Blog</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Header Icons -->
+        <div class="head-icons">
+
+
+<!-- Search -->
+    <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in blog...">
+            <button id="closeSearch">×</button>
+        </div>
+    </div>
+
+
+            <!-- Cart -->
+            <a href="shopping-cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+
+            <!-- Wishlist -->
+            <a href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+
+            <!-- Account -->
+            <a href="account.html"">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div style="background-color: #27ae60; margin-bottom: 40px;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; align-items: center; gap: 10px;">
+      <a href="home.html" style="color: #030303; text-decoration: none;"><i class="fa-solid fa-house"></i></a>
+      <span style="color: #030303;"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i></span>
+      <span style="color: #030303; font-weight: 500;"> blog </span>
+    </div>
+  </div>
+
+
+
+
+<!-- cards -->
+<section class="cards">
+    <div class="all-cards">
+    <!-- الكارت الاول -->
+    <div class="content">
+        <a href="Readmore-blog.html?id=1" class="photos">
+        <img src="photos/1.png" alt="flower1">
+        </a>
+        <div class="text">
+            <h2> How to Make Your Flowers Last Longer?</h2>
+            <div class="author">
+            <img src="photos/avatar.png" alt="Author">
+
+            <div class="author-info">
+                <h5>Tutorial</h5>
+                <small>10 June 2024</small>
+            </div>
+        </div>
+            <p>
+                Keep your flowers fresh longer by changing the water regularly, trimming the stems, and keeping them away from direct sunlight and heat. 🌷
+            </p>
+        <a href="Readmore-blog.html?id=1" class="Read-more">Read more</a>
+
+        </div>
+
+</div>
+<!-- الكارت التاني  -->
+ <div class="content">
+        <a href="Readmore-blog.html?id=2" class="photos">
+        <img src="photos/2.png" alt="flower1">
+        </a>
+        <div class="text">
+            <h2> 5 Best Flowers for a Birthday Gift</h2>
+            <div class="author">
+            <img src="photos/avatar.png" alt="Author">
+
+            <div class="author-info">
+                <h5>Interview</h5>
+                <small>10 June 2024</small>
+            </div>
+        </div>
+            <p>
+                Roses, lilies, tulips, sunflowers, and orchids are great choices for a birthday gift. 🌷🌻 Each flower adds a special touch and brings joy to the celebration.
+            </p>
+        <a href="Readmore-blog.html?id=2" class="Read-more">Read more</a>
+        </div>
+
+</div>
+<!-- الكارت التالت -->
+ <div class="content">
+    <a href="Readmore-blog.html?id=3" class="photos">
+        <img src="photos/3.png" alt="flower1">
+    </a>
+        <div class="text">
+            <h2>What Different Rose Colors Mean</h2>
+            <div class="author">
+            <img src="photos/avatar.png" alt="Author">
+
+            <div class="author-info">
+                <h5>Uncategorized</h5>
+                <small>10 June 2024</small>
+            </div>
+        </div>
+            <p>
+                Each rose color has a special meaning: red represents love, pink means admiration, white symbolizes purity, yellow expresses friendship, and orange shows enthusiasm. 🌹
+            </p>
+        <a href="Readmore-blog.html?id=3" class="Read-more">Read more</a>
+
+        </div>
+
+</div>
+<!-- الكارت الرابع -->
+ <div class="content">
+    <a href="Readmore-blog.html?id=4" class="photos">
+        <img src="photos/4.png" alt="flower1">
+    </a>
+        <div class="text">
+            <h2> How to Care for Indoor Flowers</h2>
+            <div class="author">
+            <img src="photos/avatar.png" alt="Author">
+
+            <div class="author-info">
+                <h5>News</h5>
+                <small>10 June 2024</small>
+            </div>
+        </div>
+            <p>
+                Keep indoor flowers healthy by giving them enough light, watering them regularly, and avoiding overwatering. 🌿🌷
+            </p>
+        <a href="Readmore-blog.html?id=4" class="Read-more">Read more</a>
+
+        </div>
+
+</div>
+<!-- الكارت الخامس -->
+ <div class="content">
+    <a href="Readmore-blog.html?id=5" class="photos">
+        <img src="photos/5.png" alt="flower1">
+    </a>
+        <div class="text">
+            <h2>The Best Flowers for Anniversaries</h2>
+            <div class="author">
+            <img src="photos/avatar.png" alt="Author">
+
+            <div class="author-info">
+                <h5>Tutorial</h5>
+                <small>10 June 2024</small>
+            </div>
+        </div>
+            <p>
+                Roses, lilies, and tulips are beautiful choices for anniversaries. 🌹 They express love, appreciation, and the special bond between two people.
+            </p>
+        <a href="Readmore-blog.html?id=5" class="Read-more">Read more</a>
+
+        </div>
+
+</div>
+<!-- الكارت السادس -->
+ <div class="content">
+    <a href="Readmore-blog.html?id=6" class="photos">
+        <img src="photos/6.png" alt="flower1">
+    </a>
+        <div class="text">
+            <h2> Easy Tips for Caring for Your Plants</h2>
+            <div class="author">
+            <img src="photos/avatar.png" alt="Author">
+
+            <div class="author-info">
+                <h5>Interview</h5>
+                <small>10 June 2024</small>
+            </div>
+        </div>
+            <p>
+                Give your plants enough sunlight, water them when needed, and keep their soil healthy. 🌿 Small, regular care helps them grow strong and beautiful.
+            </p>
+        <a href="Readmore-blog.html?id=6" class="Read-more">Read more</a>
+
+        </div>
+
+</div>
+<!-- الكارت السابع -->
+ <div class="content">
+    <a href="Readmore-blog.html?id=7" class="photos">
+        <img src="photos/7.png" alt="flower1">
+    </a>
+        <div class="text">
+            <h2>How to Choose the Perfect Flower Bouquet</h2>
+            <div class="author">
+            <img src="photos/avatar.png" alt="Author">
+
+            <div class="author-info">
+                <h5>News</h5>
+                <small>10 June 2024</small>
+            </div>
+        </div>
+            <p>
+                Choose a bouquet based on the occasion, your loved one’s favorite colors, and the meaning of the flowers. 🌷 A thoughtful choice makes the gift even more special.
+            </p>
+        <a href="Readmore-blog.html?id=7" class="Read-more">Read more</a>
+
+        </div>
+
+</div>
+<!-- الكارت الثامن -->
+ <div class="content">
+    <a href="Readmore-blog.html?id=8" class="photos">
+        <img src="photos/8.png" alt="flower1">
+    </a>
+        <div class="text">
+            <h2>Seasonal Flowers: What’s Blooming This Month</h2>
+            <div class="author">
+            <img src="photos/avatar.png" alt="Author">
+
+            <div class="author-info">
+                <h5>Tutorial</h5>
+                <small>10 June 2024</small>
+            </div>
+        </div>
+            <p>
+                Seasonal flowers change throughout the year, offering fresh colors and natural beauty. 🌷 Choose flowers that are currently in bloom for a fresh and beautiful bouquet.
+            </p>
+        <a href="Readmore-blog.html?id=8" class="Read-more">Read more</a>
+
+        </div>
+
+</div>
+</div>
+</section>
+
+<footer>
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="logo2.png" alt="Flower Shop Logo">
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">x</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">▶</a>
+      </div>
+    </div>
+
+    <!-- Right Side Columns -->
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h3>CONTACT</h3>
+        <p>info@xtraflower.com</p>
+        <p>+1 (800) 345 – 678</p>
+      </div>
+      <div class="footer-col">
+        <h3>ADDRESS</h3>
+        <p>1079 Terry Lane,<br>Winter Park, Florida</p>
+      </div>
+      <div class="footer-col">
+        <h3>WORKING HOURS</h3>
+        <p>Mon-Fri 9 ~ 18</p>
+        <p>Sat-Sun 10~ 20</p>
+      </div>
+    </div>
+  </footer>
+<script src="assetes/js/bootstrap.min.js"></script>
+<!-- search -->
+<script src="assests/js/js.js"></script>
+<script src="java.js"></script>
+</body>
+</html>
